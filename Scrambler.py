@@ -30,7 +30,6 @@ VERSION = 'v0.0.1'
 
 
 import random, argparse, re, string
-from pathlib import Path
 
 
 def scramble(word):
@@ -61,8 +60,7 @@ def main(args):
 
 
 if __name__ == "__main__":
-    PROJECT_PATH = Path(__file__).resolve().parent
-    APP = Path(__file__).stem
+    APP = 'Scrambler'
     parser = argparse.ArgumentParser(description="Scramble inner letters of words")
     parser.add_argument('-v', '--version', action='version', version=f"{APP} {VERSION}")
     parser.add_argument("Infile", help='file to process')
