@@ -28,9 +28,7 @@ SOFTWARE.
 
 VERSION = 'v0.0.2'
 
-
-import random, argparse, re, string
-
+import random, argparse, re
 
 def chunk(m, str):
 
@@ -55,7 +53,6 @@ def main(args):
                 outf.write(chunk(m, line))
         outf.close()
         print("\nCompleted successfully\n")
-
 
 if __name__ == "__main__":
     APP = 'Scrambler'
