@@ -26,7 +26,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 """
 
-VERSION = 'v0.0.2'
+VERSION = 'v0.0.3'
 
 import random, argparse, re
 
@@ -45,7 +45,7 @@ def main(args):
     if args['Infile'] == args['Outfile']:
         print(f"\nPlease specify an output file that is different than the input file\n")
     else:
-        m = re.compile(u'(\w{4,})')
+        m = re.compile(r'(\w{4,})')
         outf = open(args['Outfile'], 'w', encoding="UTF-8")
         with open(args['Infile'], 'r', encoding="UTF-8") as inf:
             txt = inf.readlines()
