@@ -5,7 +5,7 @@ File:           Scrambler
 
 Description:    Scramble the inner letters of words
 
-MIT License     Copyright (c) 2022 Eryk J.
+MIT License     Copyright (c) 2024 Eryk J.
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
